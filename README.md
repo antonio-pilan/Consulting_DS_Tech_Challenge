@@ -1,13 +1,11 @@
-<h1>BIX_Tech_Challenge</h1> 
+<h1>Consulting Tech Challenge</h1> 
 
-<p>Olá! Meu nome é Antonio, esse é meu repositório para o Processo seletivo da Bix Tecnologia</p>
-<p>A Notebook Jupyter "bix_tecnologia_psel_AntonioPilan" contém o código e criação do modelo XGBoost que alcançou um custo de $17900 para os dados de teste, valor muito inferior ao encontrado no primeiro ano informado (2016) e, no geral, o resultado foi muito satisfatório</p>
-
+<p>Hello! My name is Antonio, and this is my repository for the Consulting challenge that optimize costs in a company that runs Trucks.</p>
+<p>The Jupyter Notebook "bix_tecnologia_psel_AntonioPilan" contains the code and development of the XGBoost model, which achieved a cost of $17,900 on the test data. This is significantly lower than the cost reported for the first year (2016), and overall, the result was very satisfactory.</p>
 
 <hr>
-<p>O valor de $17.900 foi obtido adotando falsos positivos como $25 de maneira a ser conservador no modelo e tentando minimizar falsos negativos (que são extremamente caros) </p>
-<p>O código foi inteiro utilizando Python e o tempo de execução foi de aproximadamente 18h com muita pesquisa, tentativas, erros e aprendizados.</p>
-<hr>
+<p>The $17,900 cost was achieved by setting false positives at $25, aiming for a conservative approach while minimizing false negatives (which are extremely costly).</p>
+<p>The entire code was written in Python, with an execution time of approximately 18 hours, involving extensive research, trial and error, and valuable learning experiences.</p>
 
 
 
