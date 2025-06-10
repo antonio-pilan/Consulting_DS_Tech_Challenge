@@ -1,26 +1,26 @@
 # Predictive Maintenance Cost Optimization using Machine Learning
 
-[cite_start]This portfolio project demonstrates the application of data science techniques to optimize the maintenance planning for a fleet of trucks, aiming to significantly reduce operational costs.  The core of the project is the development of a predictive model to identify potential failures in the vehicles' Air Pressure System (APS) before they become critical.
+This portfolio project demonstrates the application of data science techniques to optimize the maintenance planning for a fleet of trucks, aiming to significantly reduce operational costs.  The core of the project is the development of a predictive model to identify potential failures in the vehicles' Air Pressure System (APS) before they become critical.
 
 ## 1. Business Problem
 
-[cite_start]A third-party transportation company experienced a significant rise in maintenance costs for its truck fleet's air system over the last three years, despite the fleet size remaining relatively constant.  Maintenance costs are structured as follows:
+A third-party transportation company experienced a significant rise in maintenance costs for its truck fleet's air system over the last three years, despite the fleet size remaining relatively constant.  Maintenance costs are structured as follows:
 
-* [cite_start]**Inspection with no defect found:** A cost of **$10** is incurred for the specialized team's inspection time. 
-* [cite_start]**Preventive repair (defect caught in time):** A cost of **$25** is charged. 
-* [cite_start]**Corrective maintenance (in-operation failure):** A cost of **$500** is incurred, which includes labor, replacement parts, and other logistical issues like a truck breaking down on the road. 
+* **Inspection with no defect found:** A cost of **$10** is incurred for the specialized team's inspection time. 
+* **Preventive repair (defect caught in time):** A cost of **$25** is charged. 
+* **Corrective maintenance (in-operation failure):** A cost of **$500** is incurred, which includes labor, replacement parts, and other logistical issues like a truck breaking down on the road. 
 
 The primary objective is to develop an AI-based system to predict maintenance needs, thereby minimizing expensive corrective actions and optimizing overall maintenance expenditure.
 
 ## 2. Data Analysis & Preprocessing
 
-[cite_start]The dataset was provided in two files: `air_system_previous_years.csv` containing historical maintenance data, and `air_system_present_year.csv` with current year data, used for the final model validation.  [cite_start]For contractual reasons, all column names were encoded. 
+The dataset was provided in two files: `air_system_previous_years.csv` containing historical maintenance data, and `air_system_present_year.csv` with current year data, used for the final model validation.  For contractual reasons, all column names were encoded. 
 
-[cite_start]The target variable, `class`, identifies trucks with defects in the air system (`pos`) versus those with defects in other systems (`neg`). 
+The target variable, `class`, identifies trucks with defects in the air system (`pos`) versus those with defects in other systems (`neg`). 
 
 ### Key Preprocessing Steps:
 
-1.  [cite_start]**Handling Missing Data:** Missing values, denoted as `na` in the dataset,  were imputed with `0`. This decision was based on the assumption that a missing reading implies a truck did not operate on a specific route or a sensor failed to record, making zero a plausible placeholder. This approach was favored over row deletion, which would have led to a significant data loss of approximately 8.28%. Imputation with the mean was deemed unsuitable due to the high standard deviation across features.
+1.  **Handling Missing Data:** Missing values, denoted as `na` in the dataset,  were imputed with `0`. This decision was based on the assumption that a missing reading implies a truck did not operate on a specific route or a sensor failed to record, making zero a plausible placeholder. This approach was favored over row deletion, which would have led to a significant data loss of approximately 8.28%. Imputation with the mean was deemed unsuitable due to the high standard deviation across features.
 
 2.  **Type Conversion:** All numeric columns, initially interpreted as strings, were converted to their correct numeric types to enable statistical analysis and modeling.
 
@@ -74,4 +74,4 @@ This project successfully demonstrates that a machine learning approach, specifi
 * **Retraining:** A retraining schedule should be established to ensure the model remains accurate as the fleet's operational patterns and data distributions evolve over time. 
 * **Risks and Precautions:** Before full implementation, it is crucial to communicate potential risks to the client, including the possibility of model drift and the critical importance of maintaining high-quality input data for sustained performance. 
 
-[cite_start]This proof-of-concept not only solves a specific business problem but also provides a scalable framework that can be adapted for other maintenance systems within the company.
+This proof-of-concept not only solves a specific business problem but also provides a scalable framework that can be adapted for other maintenance systems within the company.
